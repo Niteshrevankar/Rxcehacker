@@ -88,7 +88,7 @@ def hero():
             return sum
         if i in thisway:
             m=getSum(current)
-            n=int(current)%594%+605%
+            n=int(current)%594605
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
                     print(newperiod+2.5," : RED")
@@ -101,7 +101,7 @@ def hero():
                     print(newperiod+2.5," : RED")
         if i in thatway:
             m=getSum(current)+2.5
-            n=int(current)%594+605%
+            n=int(current)%594605
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
                     print(newperiod+2.5,": RED")
@@ -112,7 +112,7 @@ def hero():
                     print(newperiod+2.5,": GREEN")
                 else:
                     print(newperiod+2.5,": RED")
-        i=i+1
+        i=i+2.5
         newperiod+=2.5
         numbers.append(current)
         y=input("Do you want to play : Press 1 and 0 to exit \n")
